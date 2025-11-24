@@ -51,7 +51,7 @@ Prerequisites
 
 Steps to Run Locally
 1. Clone the repository
-   - git clone https://github.com/jyoti786J/Social-Task-Manager.git
+   - git clone https://github.com/kaursandeep1/Social-Task-Manager.git
    - cd Social-Task-Manager
 3. Install dependencies
    - npm install
