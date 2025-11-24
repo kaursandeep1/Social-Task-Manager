@@ -1,71 +1,55 @@
-📝 Social To-Do List Application
+# 🔐 Social Task Manager
+
 A full-stack web application that allows users to manage their tasks with Facebook authentication, file uploads, and a complete RESTful API.
 
-🎯 Overview
-This is a collaborative To-Do list application where users can:
-- Log in securely using their Facebook account
+## 🎯 Features
+
+### 🔐 Authentication & Security
+- Facebook OAuth 2.0 authentication with Passport.js
+- Secure session management
+- User isolation and data protection
+- Input validation and sanitization
+
+### 📋 Task Management
 - Create, read, update, and delete tasks
-- Upload files attached to tasks
-- Access tasks via a RESTful API
+- File uploads attached to tasks (stored as base64 in MongoDB)
+- Due date tracking and task organization
+- Clean, responsive user interface
 
-✨ Features
-🔐 Authentication
-- Facebook OAuth Login - Secure social authentication
-- Session Management - Persistent user sessions
-- Auto-login - Remembered login state
+### 🔗 RESTful API
+- Complete CRUD operations via REST endpoints
+- JSON-based API for external integrations
+- Proper HTTP status codes and error handling
 
-📋 Task Management
-- Create Tasks - Add new tasks with names, due dates, and file attachments
-- View Tasks - Clean list view of all user tasks
-- Edit Tasks - Modify existing task details
-- Delete Tasks - Remove tasks with confirmation
-- File Uploads - Attach files to tasks (stored as base64 in MongoDB)
+## 🛠️ Technology Stack
 
-🔗 RESTful API
-- POST /api/record - Create new tasks
-- GET /api/record - Retrieve all user tasks
-- PUT /api/record - Update tasks
-- DELETE /api/record/:task - Delete specific tasks
+**Backend:** Node.js, Express.js, MongoDB
+**Authentication:** Passport.js, Facebook OAuth 2.0
+**Frontend:** EJS templates, HTML5, CSS3, JavaScript
+**File Handling:** Express-formidable
+**Deployment:** Render, MongoDB Atlas
 
-🛠️ Technology Stack
-Backend:
-- Node.js & Express.js
-- MongoDB with Mongoose
-- Passport.js for Facebook OAuth
-- Express-formidable for file handling
-- EJS templating engine
+## 🚀 Quick Start
 
-Frontend:
-- EJS templates
-- HTML5 & CSS3
-- Session-based authentication
+```bash
+# Clone the repository
+git clone https://github.com/jyoti786J/Social-Task-Manager.git
+cd Social-Task-Manager
 
-Deployment:
-- Render (as indicated by callback URL)
+# Install dependencies
+npm install
 
-🚀 Installation & Setup
-Prerequisites
-- Node.js
-- MongoDB Atlas account
-- Facebook Developer account
+# Configure environment variables
+# Create .env file with:
+# MONGODB_URI=your_mongodb_connection_string
+# FACEBOOK_APP_ID=your_facebook_app_id
+# FACEBOOK_APP_SECRET=your_facebook_app_secret
+# SESSION_SECRET=your_session_secret
 
-Steps to Run Locally
-1. Clone the repository
-   - git clone https://github.com/kaursandeep1/Social-Task-Manager.git
-   - cd Social-Task-Manager
-3. Install dependencies
-   - npm install
-5. Configure environment variables
-   - Create a .env file with:
-   - MONGODB_URI=your_mongodb_connection_string
-   - FACEBOOK_APP_ID=your_facebook_app_id
-   - FACEBOOK_APP_SECRET=your_facebook_app_secret
-   - SESSION_SECRET=your_session_secret
-7. Run the application
-   - npm start
-9. Access the application
-   - Main app: http://localhost:8099
-   - Login page: http://localhost:8099/login
+# Run the application
+npm start
+
+# Access at: http://localhost:8099
 
 - Social-Task-Manager/
 - ├── server.js              # Main application file
