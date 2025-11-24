@@ -51,21 +51,21 @@ Prerequisites
 
 Steps to Run Locally
 1. Clone the repository
-   git clone https://github.com/jyoti786J/Social-Task-Manager.git
-   cd Social-Task-Manager
+   - git clone https://github.com/jyoti786J/Social-Task-Manager.git
+   - cd Social-Task-Manager
 3. Install dependencies
-   npm install
+   - npm install
 5. Configure environment variables
-   Create a .env file with:
-   MONGODB_URI=your_mongodb_connection_string
-  FACEBOOK_APP_ID=your_facebook_app_id
-  FACEBOOK_APP_SECRET=your_facebook_app_secret
-  SESSION_SECRET=your_session_secret
+   - Create a .env file with:
+   - MONGODB_URI=your_mongodb_connection_string
+   - FACEBOOK_APP_ID=your_facebook_app_id
+   - FACEBOOK_APP_SECRET=your_facebook_app_secret
+   - SESSION_SECRET=your_session_secret
 7. Run the application
-   npm start
+   - npm start
 9. Access the application
-   Main app: http://localhost:8099
-   Login page: http://localhost:8099/login
+   - Main app: http://localhost:8099
+   - Login page: http://localhost:8099/login
 
 - Social-Task-Manager/
 - ├── server.js              # Main application file
