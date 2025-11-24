@@ -41,27 +41,27 @@ npm install
 
 # Configure environment variables
 # Create .env file with:
-# MONGODB_URI=your_mongodb_connection_string
-# FACEBOOK_APP_ID=your_facebook_app_id
-# FACEBOOK_APP_SECRET=your_facebook_app_secret
-# SESSION_SECRET=your_session_secret
+MONGODB_URI=your_mongodb_connection_string
+FACEBOOK_APP_ID=your_facebook_app_id
+FACEBOOK_APP_SECRET=your_facebook_app_secret
+SESSION_SECRET=your_session_secret
 
 # Run the application
 npm start
 
 # Access at: http://localhost:8099
 
-- Social-Task-Manager/
-- ├── server.js              # Main application file
-- ├── package.json           # Dependencies and scripts
-- ├── views/                 # EJS templates
-- │   ├── create.ejs        # Task creation form
-- │   ├── list.ejs          # Tasks listing page
-- │   ├── edit.ejs          # Task editing form
-- │   ├── details.ejs       # Task details view
-- │   ├── info.ejs          # Information/status messages
-- │   └── login.ejs         # Login page
-- └── (other configuration files)
+Social-Task-Manager/
+├── server.js              # Main application file
+├── package.json           # Dependencies and scripts
+├── views/                 # EJS templates
+│   ├── create.ejs        # Task creation form
+│   ├── list.ejs          # Tasks listing page
+│   ├── edit.ejs          # Task editing form
+│   ├── details.ejs       # Task details view
+│   ├── info.ejs          # Information/status messages
+│   └── login.ejs         # Login page
+└── (other configuration files)
 
 🔧 API Usage Examples
 
