@@ -80,9 +80,16 @@ curl -X PUT http://localhost:8099/api/record \
 
 Delete a Task
 curl -X DELETE http://localhost:8099/api/record/TaskNameToDelete
-
+```
 🔒 Security Features
 - Facebook OAuth 2.0 - Secure third-party authentication
 - Session-based authentication - Server-side session management
 - User isolation - Users can only access their own tasks
 - Input validation - Form data validation and sanitization
+
+👨‍💻 Technical Highlights
+- OAuth 2.0 Implementation with Facebook integration
+- RESTful API Design with proper HTTP methods
+- Session-based Authentication with secure token management
+- File Upload System with base64 encoding
+- MVC Architecture with separation of concerns
